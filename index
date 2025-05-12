@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora</title>
+  <style>
+    .calculator {
+      background: #8bd3dd;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 260px;
+      margin: auto;
+    }
+
+    .display {
+      width: 100%;
+      height: 50px;
+      font-size: 24px;
+      text-align: right;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    button {
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .operator {
+      background-color: #f7b267;
+    }
+
+    .equal {
+      grid-column: span 4;
+      background-color: #f28482;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" class="display" disabled>
+
+    <div class="buttons">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">/</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operator">*</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="operator">-</button>
+
+      <button>0</button>
+      <button>.</button>
+      <button class="clear">C</button>
+      <button class="operator">+</button>
+      <button class="equal">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
